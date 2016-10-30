@@ -8,6 +8,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/wine_id_label"/>
+    <EditText
+        android:id="@+id/wine_item_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -22,15 +26,27 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/wine_pack_size_label"/>
+    <EditText
+        android:id="@+id/wine_item_pack_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/wine_case_price_label"/>
+    <EditText
+        android:id="@+id/wine_item_case_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/wine_active_label"/>
+    <CheckBox
+        android:id="@+id/wine_item_active"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
