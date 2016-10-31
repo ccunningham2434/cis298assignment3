@@ -1,5 +1,6 @@
 package edu.kvcc.cis298.cis298assignment3;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -48,12 +49,30 @@ public class WineItemListFragment extends Fragment {
 
         private WineItem mWineItem;// >The wine item to display.
 
-
+        // >Constructor
         public WineItemHolder(View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
 
+            // >Assign the view controls to their widget objects.
             mId = (TextView) itemView.findViewById(R.id.list_item_wine_id);
+            mDescription = (TextView) itemView.findViewById(R.id.list_item_wine_description);
+            mCasePrice = (TextView) itemView.findViewById(R.id.list_item_wine_price);
+        }
+
+        // >Setup this class to use a wine item.
+        public void bindWineItem(WineItem wineItem) {
+            mWineItem = wineItem;
+
+            mId.setText(mWineItem.getId());
+            mDescription.setText(mWineItem.getDescription());
+            mCasePrice.setText(mWineItem.getCasePrice());
+        }
+
+        @Override
+        public void onClick(View v) {
+            Intent intent = WinePagerActivity.newIntent(getActivity(), mWineItem.getId());
+            startActivity(intent);
         }
     }
 
