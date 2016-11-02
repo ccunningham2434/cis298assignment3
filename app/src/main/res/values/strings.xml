@@ -4,9 +4,9 @@
 
 
     <string name="wine_id_label">Id:</string>
-    <string name="wine_description_label">Description:</string>
-    <string name="wine_pack_size_label">Pack Size:</string>
-    <string name="wine_case_price_label">Case Price:</string>
+    <string name="wine_description_label">Name:</string>
+    <string name="wine_pack_size_label">Pack:</string>
+    <string name="wine_case_price_label">Price:</string>
     <string name="wine_active_label">Active:</string>
 
 

@@ -16,10 +16,12 @@ public class WineItemListActivity extends FragmentActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fragment);
-
+        // >Get the fragment manager.
         FragmentManager fm = getSupportFragmentManager();
-
+        // >Get the fragment from the layout.
         Fragment fragment = fm.findFragmentById(R.id.fragment_container);
+        // >When the app starts, there is no fragment in the layout so it will be null.
+        // >So we need to add it.
         if(fragment == null) {
             fragment = new WineItemListFragment();
             fm.beginTransaction().add(R.id.fragment_container, fragment).commit();

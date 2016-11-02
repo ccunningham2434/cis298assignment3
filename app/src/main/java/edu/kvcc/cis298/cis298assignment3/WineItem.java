@@ -1,19 +1,21 @@
 package edu.kvcc.cis298.cis298assignment3;
 
+import java.util.UUID;
+
 /**
  * Created by ccunn on 29-Oct-16.
  */
 
 public class WineItem {
 
-    private int mId;
+    private String mId;
     private String mDescription;
     private String mPackSize;
     private String mCasePrice;
     private boolean mActive;
 
 
-    public WineItem(int id, String description, String packSize, String casePrice, boolean active) {
+    public WineItem(String id, String description, String packSize, String casePrice, boolean active) {
         mId = id;
         mDescription = description;
         mPackSize = packSize;
@@ -22,10 +24,10 @@ public class WineItem {
     }
 
 
-    public int getId() {
+    public String getId() {
         return mId;
     }
-    public void setId(int id) {
+    public void setId(String id) {
         mId = id;
     }
 
