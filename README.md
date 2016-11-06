@@ -1,6 +1,6 @@
 # Assignment 3 - Master Detail Wine List with Fragments
 ## Due 11-14-2016
-## Author
+## Author: Chad Cunningham
 
 
 
@@ -65,7 +65,8 @@ Through File System:   app/src/main/res/raw/
 | Total                             | 100    |
 
 ## Outside Resources Used
-
+Android Developers site, Stackoverflow.
 
 
 ## Known Problems, Issues, And/Or Errors in the Program
+None Known.

@@ -68,4 +68,15 @@ public class WineItemFragment extends Fragment {
 
         return v;
     }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+
+        mWineItem.setDescription(mDescriptionField.getText().toString());
+        mWineItem.setId(mIdField.getText().toString());
+        mWineItem.setPackSize(mPackField.getText().toString());
+        mWineItem.setCasePrice(mPriceField.getText().toString());
+        mWineItem.setActive(mActiveCheckbox.isChecked());
+    }
 }
